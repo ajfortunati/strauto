@@ -1,12 +1,11 @@
 package handler
 
 import (
-	"context"
 	"fmt"
 	"net/http"
 )
 
-func OauthCallback(ctx context.Context, w http.ResponseWriter, r *http.Request) error {
+func OauthCallback(w http.ResponseWriter, r *http.Request) error {
 	// parse code from Strava
 	code := r.URL.Query().Get("code")
 	if code == "" {
