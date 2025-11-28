@@ -1,11 +1,8 @@
 import {
   Button,
   Card,
-  CardAction,
-  CardContent,
   CardDescription,
   CardHeader,
-  CardFooter,
   CardTitle,
 } from '@/components/ui'
 
